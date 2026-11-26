@@ -1,0 +1,953 @@
+
+/* =========================================
+   1. GENERAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   2. NAVIGATION BAR
+========================================= */
+
+header {
+    background: #101d32;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================================
+   3. PROFESSIONAL HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 80px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #101d32,
+        #193b60
+    );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitle {
+    color: #38bdf8;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    font-size: 23px;
+
+    font-weight: 500;
+
+    color: #dbeafe;
+
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #cbd5e1;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   4. HERO BUTTONS
+========================================= */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #0284c7;
+
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #0369a1;
+
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    border: 1px solid white;
+
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+
+    color: #101d32;
+}
+
+
+/* =========================================
+   5. PROFILE IMAGE
+========================================= */
+
+.hero-image img {
+    width: 320px;
+
+    height: 380px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 4px solid #38bdf8;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   6. GENERAL CONTENT SECTIONS
+========================================= */
+
+.section {
+    padding: 70px 10%;
+}
+
+.section h2 {
+    font-size: 30px;
+
+    margin-bottom: 25px;
+
+    color: #0f172a;
+}
+
+.section p {
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   7. EXPERIENCE CARDS
+========================================= */
+
+.experience-card {
+    background: white;
+
+    padding: 22px;
+
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+    border-left: 4px solid #0284c7;
+
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card h3 {
+    color: #0f172a;
+
+    margin-bottom: 5px;
+}
+
+.experience-card span {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   8. TECHNICAL SKILLS
+========================================= */
+
+.skills-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.skills-container span {
+    background: #e0f2fe;
+
+    color: #0369a1;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.skills-container span:hover {
+    background: #0284c7;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   9. PROJECT CARDS
+========================================= */
+
+.project-card {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    color: #0369a1;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   10. CONTACT SECTION
+========================================= */
+
+#contact {
+    text-align: center;
+
+    background: #eaf3fb;
+}
+
+#contact p {
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   11. FOOTER
+========================================= */
+
+footer {
+    background: #101d32;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   12. RESPONSIVE DESIGN - TABLETS
+========================================= */
+
+@media (max-width: 992px) {
+
+    .hero {
+        padding: 70px 6%;
+
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image img {
+        width: 270px;
+
+        height: 330px;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+
+}
+
+
+/* =========================================
+   13. RESPONSIVE DESIGN - MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    header {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    /* Profile image */
+
+    .hero-image img {
+        width: 240px;
+
+        height: 280px;
+    }
+
+    /* Sections */
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+/* =========================================
+   14. SMALL MOBILE SCREENS
+========================================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+}
+/* =========================================
+   15. ABOUT ME SECTION
+========================================= */
+
+.about-section {
+    padding: 90px 10%;
+
+    background: #f8fafc;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Section Heading */
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading span {
+    color: #0284c7;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+
+    color: #101d32;
+
+    margin-top: 8px;
+}
+
+.heading-line {
+    width: 65px;
+
+    height: 4px;
+
+    background: #0284c7;
+
+    border-radius: 5px;
+
+    margin-top: 12px;
+}
+
+/* About Content Layout */
+
+.about-content {
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+/* About Text */
+
+.about-text h3 {
+    font-size: 25px;
+
+    color: #101d32;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #475569;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+/* Statistics Layout */
+
+.about-stats {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+/* Statistics Cards */
+
+.stat-card {
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    border-bottom: 3px solid #0284c7;
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    font-size: 36px;
+
+    color: #0284c7;
+
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    font-size: 14px;
+
+    color: #64748b;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   16. ABOUT SECTION RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 60px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .about-text h3 {
+        font-size: 22px;
+    }
+
+    .about-stats {
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 22px 12px;
+    }
+
+    .stat-card h3 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+   17. PROFESSIONAL EXPERIENCE SECTION
+========================================= */
+
+.experience-section {
+    padding: 90px 10%;
+
+    background: #ffffff;
+}
+
+.experience-container {
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+/* Section introduction */
+
+.experience-section .section-heading {
+    margin-bottom: 55px;
+}
+
+.experience-section .section-heading p {
+    color: #64748b;
+
+    margin-top: 15px;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   18. EXPERIENCE TIMELINE
+========================================= */
+
+.experience-timeline {
+    position: relative;
+
+    padding-left: 35px;
+}
+
+/* Vertical timeline line */
+
+.experience-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 8px;
+
+    top: 10px;
+
+    bottom: 10px;
+
+    width: 3px;
+
+    background: #bae6fd;
+}
+
+
+/* Timeline item */
+
+.timeline-item {
+    position: relative;
+
+    margin-bottom: 35px;
+}
+
+/* Timeline circle */
+
+.timeline-dot {
+    position: absolute;
+
+    left: -35px;
+
+    top: 25px;
+
+    width: 19px;
+
+    height: 19px;
+
+    background: #0284c7;
+
+    border: 4px solid #e0f2fe;
+
+    border-radius: 50%;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   19. EXPERIENCE CARDS
+========================================= */
+
+.timeline-card {
+    background: #f8fafc;
+
+    padding: 28px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.3s;
+}
+
+.timeline-card:hover {
+    transform: translateX(6px);
+
+    border-color: #0284c7;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Employment dates */
+
+.timeline-date {
+    display: inline-block;
+
+    background: #e0f2fe;
+
+    color: #0369a1;
+
+    padding: 6px 13px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* Organization name */
+
+.timeline-card h3 {
+    font-size: 21px;
+
+    color: #101d32;
+
+    margin-bottom: 8px;
+}
+
+
+/* Position title */
+
+.timeline-card h4 {
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #0284c7;
+
+    margin-bottom: 15px;
+}
+
+
+/* Experience description */
+
+.timeline-card p {
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #475569;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   20. EXPERIENCE TECHNOLOGY TAGS
+========================================= */
+
+.experience-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+}
+
+.experience-tags span {
+    background: #e2e8f0;
+
+    color: #334155;
+
+    padding: 7px 12px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.leadership-note {
+    margin-top: 18px;
+
+    margin-bottom: 0 !important;
+
+    font-weight: bold;
+
+    color: #0369a1 !important;
+}
+
+
+/* =========================================
+   21. EXPERIENCE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+
+    .experience-section {
+        padding: 60px 6%;
+    }
+
+    .experience-timeline {
+        padding-left: 28px;
+    }
+
+    .experience-timeline::before {
+        left: 6px;
+    }
+
+    .timeline-dot {
+        left: -28px;
+    }
+
+    .timeline-card {
+        padding: 20px;
+    }
+
+    .timeline-card h3 {
+        font-size: 19px;
+    }
+
+    .timeline-card h4 {
+        font-size: 15px;
+    }
+
+    .timeline-card:hover {
+        transform: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .experience-section {
+        padding: 50px 5%;
+    }
+
+    .timeline-card {
+        padding: 17px;
+    }
+
+    .experience-tags {
+        gap: 7px;
+    }
+
+}
